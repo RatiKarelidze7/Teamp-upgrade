@@ -1,0 +1,120 @@
+.findDeveloper {
+  display: flex;
+  justify-content: start;
+  gap: 120px;
+  align-items: start;
+  padding: 100px 50px 100px 50px;
+
+  .filter-container {
+    width: 360px;
+    display: grid;
+    background-color: #222831;
+    color: white;
+    padding: 30px;
+    gap: 30px;
+    border-radius: 10px;
+
+    .filter-options {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+
+      p {
+        background-color: #393E46;
+        padding: 7px;
+        font-weight: 500;
+        border-radius: 7px;
+        color: #DFD0B8;
+        cursor: pointer;
+        transition: all 0.3s;
+
+        &:hover {
+          background-color: #DFD0B8;
+          color: #222831;
+        }
+      }
+    }
+
+    button {
+      padding: 12px 25px;
+      border-radius: 8px;
+      border: 1px solid #948979;
+      background-color: #393E46;
+      cursor: pointer;
+      font-size: 15px;
+      font-weight: 550;
+      color: #DFD0B8;
+      transition: all 0.3s;
+
+      &:hover {
+        border: 1px solid #393E46;
+        background-color: #DFD0B8;
+        color: #222831;
+      }
+    }
+  }
+
+  .filtered-devs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    .devs {
+      width: 350px;
+      height: 350px;
+      display: grid;
+      background-color: #DFD0B8;
+      gap: 20px;
+      padding: 20px;
+      border-radius: 10px;
+
+      .dev-flex {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 20px;
+
+        .flex-option {
+          h4 {
+            color: green;
+          }
+        }
+
+        img {
+          width: 45px;
+          height: 45px;
+        }
+      }
+
+      .skills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        p {
+          background-color: #7F8CAA;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 0px 10px;
+          border-radius: 8px;
+          color: white;
+        }
+      }
+
+      button {
+        background-color: #393E46;
+        color: #DFD0B8;
+        border: 1px solid #948979;
+        border-radius: 8px;
+        transition: all 0.3s;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #222831;
+          color: white;
+        }
+      }
+    }
+  }
+}

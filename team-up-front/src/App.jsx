@@ -1,10 +1,19 @@
 import classes from "./modules/App.module.scss"
+import { FeaturedProjects } from "./components/Pages/Home/FeaturedProjects.jsx"
+import { MainContent } from "./components/Pages/Home/MainContent.jsx";
+import { Header } from "./components/Main/Header.jsx"
+import { Footer } from "./components/Main/Footer.jsx"
 
 function App() {
 
   return (
     <>
-      <h1>Hello World</h1>
+        <Header/>
+        <div className={classes["component-gap"]}>
+            <MainContent/>
+            <FeaturedProjects/>
+        </div>
+        <Footer/>
     </>
   )
 }
