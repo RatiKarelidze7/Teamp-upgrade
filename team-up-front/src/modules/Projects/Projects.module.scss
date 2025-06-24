@@ -4,7 +4,7 @@
     padding: 20px;
     max-width: 1600px;
     margin: 0 auto;
-    height: calc(100vh - 100px); 
+    height: calc(100vh - 100px);
     overflow: hidden;
     background: var(--background-color);
     font-family: 'Inter', sans-serif;
@@ -1302,6 +1302,21 @@
         font-size: 0.85rem;
     }
 }
+
+.emptyMessage {
+    margin-top: 200px;
+    text-align: center;
+    font-size: 70px;
+    border-radius: 8px;
+    color: #737783; 
+    font-weight: 400;
+
+
+    @media (max-width: 768px) {
+        font-size: 20px;
+    }
+}
+
 
 .modalContent {
     max-height: 90vh;

@@ -34,7 +34,7 @@
       display: block;
       width: 25px;
       height: 3px;
-      background-color: #bda21d;
+      background-color: #7F8CAA;
       transition: all 0.3s ease;
     }
 
@@ -56,7 +56,7 @@
 
 .sidebar {
   width: 280px;
-  background: #fffaec;
+  background: #393E46;
   padding: 20px;
   border-right: 1px solid #ddd;
   transition: transform 0.3s ease;
@@ -84,21 +84,22 @@
   .logo {
     font-size: 20px;
     font-weight: bold;
-    color: #000000;
+    color: #EAEFEF;
   }
 
   .search-box input {
     width: 100%;
     padding: 0.75rem;
-    border: 1px solid #ccc;
+    border: 1px solid #393E46;
     border-radius: 8px;
-    background: #f9f9f9;
+    background: #333446;
+    color: #EAEFEF;
     outline: none;
     transition: border 0.3s ease-in-out;
 
     &:focus {
-      border-color: #efd135;
-      box-shadow: 0 0 10px #bda21d;
+      border-color: #DFD0B8;
+      box-shadow: 0 0 10px #948979;
     }
   }
 }
@@ -131,6 +132,10 @@
     padding: 0.5rem;
     height: calc(100vh - 300px); // Adjust based on sidebar height
   }
+}
+
+.no-conversations {
+  color: #B8CFCE  ;
 }
 
 .users-list {

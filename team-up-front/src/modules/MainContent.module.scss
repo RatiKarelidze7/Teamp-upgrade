@@ -1,203 +1,157 @@
-.main-container {
+.main-content {
   display: flex;
-  max-width: 191dvh;
-  margin-left: 52px;
-  margin-right: 52px;
-  padding: 50px 0px;
-  gap: 150px;
-  margin-top:70px;
+  padding: 50px 40px 50px 40px;
+  justify-content: space-between;
+  align-items: center;
 
-  @media screen and (max-width: 481px) {
-    max-width: 58dvh;
-    display: grid;
-    gap: 50px;
-    margin: 70px auto 0;
-    padding: 0 15px;
+  @media (max-width: 1024px) {
+    padding: 40px 20px 40px 20px;
+    width: 1024px !important;
+    margin: 0 auto;
+    flex-direction: column;
   }
 
-  @media screen and (max-width: 1280px) {
-    max-width: 58dvh;
-    display: grid;
-    gap: 50px;
-    padding: 0 15px;
+  @media (max-width: 992px) {
+    padding: 40px 20px 40px 20px;
+    width: 992px !important;
+    margin: 0 auto;
+    flex-direction: column;
   }
+
+  @media (max-width: 768px) {
+    padding: 40px 20px 40px 20px;
+    width: 768px !important;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+
+  @media (max-width: 576px) {
+    padding: 40px 20px 40px 20px;
+    width: 576px !important;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+
+  @media (max-width: 490px) {
+    padding: 40px 20px 40px 20px;
+    width: 490px !important;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+
+  @media (max-width: 470px) {
+    padding: 40px 20px 40px 20px;
+    width: 470px !important;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+
+  @media (max-width: 430px) {
+    padding: 40px 20px 40px 20px;
+    width: 430px !important;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+  @media (max-width: 365px) {
+    padding: 40px 20px 40px 20px;
+    width: 365px !important;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+
 
   .left-side {
-    display: grid;
     width: 600px;
+    height: 50vh;
+    display: grid;
 
-    @media screen and (max-width: 481px) {
-      width: 41dvh;
+    @media (max-width: 1024px) {
+      width: 420px;
+      height: 45vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       text-align: center;
+      gap: 40px;
     }
 
-    @media only screen and (max-width: 1280px) {
-      // width: 41dvh;
-      text-align: center;
-    }
-
-    .bottom-text{
-      margin-top:1rem;
-    }
-
-    p {
-      color: #CBD5E1;
-
-      @media screen and (max-width: 481px) {
-        font-size: 14px;
-        width: 100%;
-        margin: 0 auto;
-      }
-    }
-
-    h1 {
+    .main-title {
       font-size: 2.5rem;
-      text-transform: capitalize;
-      color: #F5F5F5;
-      
-      @media screen and (max-width: 481px) {
-        font-size: 1.5rem;
-        width: 100%;
-        margin: 0 auto;
+
+      @media (max-width: 1024px) {
+        font-size: 1.7rem;
+        width: 420px;
       }
 
       mark {
-        background-color: #F0CD3B;
-        border-radius: 5px;
-        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-        padding: 1dvh;
+        background-color: #547792;
+        color: #ECEFCA;
+        padding: 5px;
+        border-radius: 7px;
+      }
+    }
+
+    p {
+      @media (max-width: 1024px) {
+        width: 420px;
       }
     }
 
     .result-side {
       display: flex;
       gap: 50px;
-      max-width: 70dvh;     
 
-      @media screen and (max-width: 481px) {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        margin-top:20px;
+      @media (max-width: 1024px) {
         gap: 20px;
-        width: 100%;
       }
 
       div {
+        background-color: #547792;
+        width: 16dvh;
+        height: 8.5dvh;
+        border-radius: 7px;
+        color: #ECEFCA;
+        font-weight: 500;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: #F0CD3B;
-        padding: 7px;
-        margin-top:70px;
-        border-radius: 8px;
-        box-shadow: 3px 2px 21px 0px rgba(0, 0, 0, 0.4);
-        -webkit-box-shadow: 3px 2px 21px 0px rgba(0, 0, 0, 0.4);
-        -moz-box-shadow: 3px 2px 21px 0px rgba(0, 0, 0, 0.4);
 
-        @media screen and (max-width: 481px) {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          width: 80%;
-          margin: 0 auto;
-        }
-
-        h2 {
-          font-size: 2rem;
+        @media (max-width: 1024px) {
+          width: 12.5dvh;
+          font-size: 12px;
+          color: white;
         }
 
         p {
-          color: #1d1d1d;
-
-          @media screen and (max-width: 481px) {
-            transform: none;
+          @media (max-width: 1024px) {
+            width: 12.5dvh;
+            font-size: 12px;
+            transform: translate(7px, 0);
           }
         }
       }
     }
-
-    .two-btn {
-      display: flex;
-      margin-top:30px;
-      gap: 15px;
-
-      @media screen and (max-width: 481px) {
-        justify-content: center;
-        width: 100%;
-      }
-
-      .blue-btn {
-        background-color: #F0CD3B;
-        border: none;
-        border-radius: 7px;
-        width: 120px;
-        height: 50px;
-        color: #ffffff;
-        cursor: pointer;
-        transition: all 0.3s;
-
-        &:hover {
-          background-color: #d4bb2d;
-        }
-      }
-
-
-      .white-btn {
-        background-color: #fffaec;
-        border: 1px solid #000;
-        border-radius: 7px;
-        width: 120px;
-        height: 50px;
-        color: #000;
-        cursor: pointer;
-        transition: all 0.3s;
-      }
-
-      .white-btn:hover {
-        background-color: #ededed;
-        border: 1px solid #ededed;
-        color: #000;
-      }
-    }
-
   }
 
   .right-side {
-    width: 82dvh;
+    width: 89dvh;
 
-    @media screen and (max-width: 481px) {
-      width: 100%;
+    @media (max-width: 1024px) {
+      width: 1024px !important;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
-    .right-side_img {
+    img {
       width: 89dvh;
       border-radius: 10px;
 
-      @media screen and (max-width: 481px) {
-        width: 100%;
-        margin: 0 auto;
-      }
-
-      img {
-        width: 100%;
-        border-radius: 10px;
-
-        @media screen and (max-width: 2100px) and (min-width: 600px) {
-          width: 100%;
-          margin-left:20dvh;
-        }
-
-        @media screen and (max-width: 481px) {
-          width: 100%;
-          display: block;
-          margin: 0 auto;
-        }
+      @media (max-width: 1024px) {
+        width: 42dvh;
       }
     }
   }
-
 }
