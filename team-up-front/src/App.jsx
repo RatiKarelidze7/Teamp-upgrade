@@ -1,21 +1,23 @@
+import Navbar from "./components/Main/Navbar.jsx"
+import MainContent from "./components/Pages/Home/MainContent.jsx"
+import  "./modules/Scroll.module.scss"
+import FeaturedProjects from "./components/Pages/Home/FeaturedProjects.jsx"
+import Footer from "./components/Main/Footer.jsx"
 import classes from "./modules/App.module.scss"
-import { FeaturedProjects } from "./components/Pages/Home/FeaturedProjects.jsx"
-import { MainContent } from "./components/Pages/Home/MainContent.jsx";
-import { Header } from "./components/Main/Header.jsx"
-import { Footer } from "./components/Main/Footer.jsx"
 
 function App() {
 
-  return (
-    <>
-        <Header/>
-        <div className={classes["component-gap"]}>
+    return (
+        <div className={classes["body"]}>
+             <Navbar/>
+            <div>
             <MainContent/>
             <FeaturedProjects/>
+            </div>
+            <br/><br/><br/><br/><br/><br/>
+            <Footer/>
         </div>
-        <Footer/>
-    </>
-  )
+    )
 }
 
 export default App

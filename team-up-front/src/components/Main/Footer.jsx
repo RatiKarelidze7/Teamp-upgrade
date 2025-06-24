@@ -1,6 +1,6 @@
-import classes from "../../modules/Main/Footer.module.scss"
+import classes from "../../modules/Footer.module.scss";
 
-export const Footer = () => {
+const Footer = () => {
     return (
         <footer className={classes.footer}>
             <div className={classes.container}>
@@ -9,24 +9,22 @@ export const Footer = () => {
                         <h3>About Team Up</h3>
                         <p>Team Up is a collaborative platform designed to bring people together for meaningful projects and innovative solutions.</p>
                     </div>
-
+                    
                     <div className={classes.footerSection}>
                         <h3>Quick Links</h3>
                         <ul>
-                            <li><a href="/features">Features</a></li>
+                            <li><a href="/">Home</a></li>
                             <li><a href="/projects">Projects</a></li>
-                            <li><a href="/teams">Teams</a></li>
-                            <li><a href="/blog">Blog</a></li>
+                            <li><a href="/FindDevelopers">Find Developers</a></li>
+                            <li>Auction</li>
                         </ul>
                     </div>
 
                     <div className={classes.footerSection}>
                         <h3>Support</h3>
                         <ul>
-                            <li><a href="/help">Help Center</a></li>
                             <li><a href="/faq">FAQ</a></li>
                             <li><a href="/contact">Contact Us</a></li>
-                            <li><a href="/feedback">Feedback</a></li>
                         </ul>
                     </div>
 
@@ -35,8 +33,6 @@ export const Footer = () => {
                         <ul>
                             <li><a href="https://twitter.com">Twitter</a></li>
                             <li><a href="https://linkedin.com">LinkedIn</a></li>
-                            <li><a href="https://github.com">GitHub</a></li>
-                            <li><a href="https://discord.com">Discord</a></li>
                         </ul>
                     </div>
                 </div>
@@ -53,3 +49,5 @@ export const Footer = () => {
         </footer>
     )
 }
+
+export default Footer;
